@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.header{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* shared related styles */
+.display-flex{
+    display: flex;
+}
+.bg-color{
+    background-color: rgb(226, 224, 224);
+}
+.text-gray{
+    color:#3A3A3A ;
+}
+
+/* navbar related styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 30px;
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 700;
+}
+#brand{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+}
+main{
+    max-width: 1449px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width:576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+}
