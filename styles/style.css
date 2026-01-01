@@ -15,6 +15,9 @@
 }
 
 /* shared related styles */
+.text-gray-light{
+    color:rgba(58, 58, 58, 1) ;
+}
 .display-flex{
     display: flex;
 }
@@ -43,14 +46,122 @@
     font-size: 1.25rem;
     color: #3A3A3A;
 }
+/* main related styles */
 main{
     max-width: 1449px;
     margin: 0 auto;
 }
+main > section{
+    margin-top: 100px;
+}
+.influencer-content{
+    align-items: center;
+}
+.main-camera{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+.main-camer img{
+    max-height: 100%;
+}
+.main-area{
+    max-width: 582px;
+    margin: 0 auto;
+}
+.main-camera{
+    max-width: 440px;
+    margin: 0 auto;
+}
+.main-title{
+    font-weight: 600;
+    font-size: 3.1rem;
+}
+.title-descriptions{
+    font-weight: 700;
+    color: #3A3A3A;
+}
+.btn-primary{
+    background-color:rgba(224, 44, 109, 1) ;
+    border: 1px solid rgba(224, 44, 109, 1) ;
+    border-radius: 41px;
+    padding: 10px 24px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+}
+/* companese logos styles */
+.companes-logo{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 44px 38px;
+    gap: 60px;
+    box-shadow: 10px 10px 10px rgb(196, 196, 196);
+    align-items: center;
+}
+.collection{
+    max-width: 700;
+    font-size: 1.8rem;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+.cards{
+     box-shadow: 0 0 40px 0 rgb(99, 99, 99);
+    align-items: center;
+    border-radius: 8px;
+    max-width: 360px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 16px 15px;
+}
+.cards img{
+    max-width: 100%;
+    margin: 0 auto;
 
+}
+.card-title{
+font-size: 1.8rem;
+color: rgba(24, 25, 31, 1);
+}
+.price{
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.87);
+
+}
+/* media-query for mobile  */
 
 @media screen and (max-width:576px){
-    .navbar, .nav-links{
+    .navbar, 
+    .nav-links,
+    .influencer-content {
         flex-direction: column;
+    }
+    .companes-logo{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .collection-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* query for big screen  */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .navbar, 
+    .nav-links,
+    .influencer-content {
+        flex-direction: column;
+    }
+    .companes-logo{
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .collection-container{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
